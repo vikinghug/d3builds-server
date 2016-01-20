@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @skill_category.title %>
+</p>
+
+<p>
+  <strong>Class:</strong>
+  <%= @skill_category.klass.title %>
+</p>
+
+<p>
+  <strong>Skills:</strong>
+  <ul>
+    <% @skill_category.skills.each do |skill| %>
+      <li><%= link_to skill.title, skill %></li>
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_skill_category_path(@skill_category) %> |
+<%= link_to 'Back', skill_categories_path %>
