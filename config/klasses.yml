@@ -1,0 +1,22 @@
+klasses:
+  Barbarian:
+    Primary:
+      - Bash
+      - Cleave
+      - Frenzy
+    Secondary:
+      - Hammer of the Ancients
+      - Rend
+      - Seismic Slam
+      - Whirlwind
+      - Ancient Spear
+    Defensive:
+      - Ground Stomp
+      - Leap
+      - Sprint
+      - Ignore Pain
+  Crusader: []
+  Demon Hunter: []
+  Monk: []
+  Witch Doctor: []
+  Wizard: []
