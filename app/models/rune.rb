@@ -1,5 +1,5 @@
-class Skill < ActiveRecord::Base
+class Rune < ActiveRecord::Base
   belongs_to :klass
+  belongs_to :skill
   belongs_to :skill_category
-  has_many :runes
 end

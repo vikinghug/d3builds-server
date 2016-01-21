@@ -14,7 +14,7 @@
   <strong>Skills:</strong>
   <ul>
     <% @skill_category.skills.each do |skill| %>
-      <li><%= link_to skill.title, skill %></li>
+      <li><%= skill.order %>: <%= link_to skill.title, skill %></li>
     <% end %>
   </ul>
 </p>

@@ -1,14 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @skill.title %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @skill.skill_category.title %>
+  <h1><%= @skill.title %></h1>
+  <h2><%= @skill.skill_category.title %> Skill</h2>
+  <h3>Runes:</h3>
+  <ul>
+    <% @skill.runes.each do |rune| %>
+      <li><%= rune.title.presence or 'No Rune' %></li>
+    <% end%>
+  </ul>
 </p>
 
 <%= link_to 'Edit', edit_skill_path(@skill) %> |
-<%= link_to 'Back', skills_path %>
+<%= link_to "Back to #{@skill.klass.title}", klass_path(@skill.klass) %>

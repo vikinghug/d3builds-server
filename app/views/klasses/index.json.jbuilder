@@ -8,6 +8,8 @@ json.array!(@klasses) do |klass|
     json.category_id skill.skill_category.id
     json.class klass.title
     json.class_id klass.id
+    json.runes skill.runes
+
     json.url skill_url(skill, format: :json)
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160120213632) do
+ActiveRecord::Schema.define(version: 20160121155809) do
 
   create_table "klasses", force: :cascade do |t|
     t.string   "title"
@@ -19,11 +19,22 @@ ActiveRecord::Schema.define(version: 20160120213632) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "runes", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "klass_id"
+    t.integer  "skill_id"
+    t.integer  "skill_category_id"
+    t.integer  "order"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
   create_table "skill_categories", force: :cascade do |t|
     t.string   "title"
     t.integer  "klass_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "order"
   end
 
   add_index "skill_categories", ["klass_id"], name: "index_skill_categories_on_klass_id"
@@ -35,6 +46,7 @@ ActiveRecord::Schema.define(version: 20160120213632) do
     t.datetime "updated_at",        null: false
     t.integer  "klass_id"
     t.integer  "skill_category_id"
+    t.integer  "order"
   end
 
   add_index "skills", ["klass_id"], name: "index_skills_on_klass_id"
