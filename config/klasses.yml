@@ -15,8 +15,172 @@ klasses:
       - Leap
       - Sprint
       - Ignore Pain
-  Crusader: []
-  Demon Hunter: []
-  Monk: []
-  Witch Doctor: []
-  Wizard: []
+    Might:
+      - Overpower
+      - Revenge
+      - Furious Charge
+      - Avalanche
+    Tactics:
+      - Threatening Shout
+      - Battle Rage
+      - War Cry
+    Rage:
+      - Earthquake
+      - Call of the Ancients
+      - Wrath of the Berserker
+
+  Crusader:
+    Primary:
+      - Punish
+      - Slash
+      - Smite
+      - Justice
+    Secondary:
+      - Shield Bash
+      - Sweep Attack
+      - Blessed Hammer
+      - Blessed Shield
+      - Fist of the Heavens
+    Defensive:
+      - Shield Glare
+      - Iron Skin
+      - Consecration
+      - Judgement
+    Utility:
+      - Provoke
+      - Steed Charge
+      - Condemn
+      - Phalanx
+    Laws:
+      - Laws of Valor
+      - Laws of Justice
+      - Laws of Hope
+    Conviction:
+      - Falling Sword
+      - Akarat's Champion
+      - Heaven's Fury
+      - Bombardment
+
+  Demon Hunter:
+    Primary:
+      - Hungering Arrow
+      - Entangling Shot
+      - Bola Shot
+      - Grenades
+    Secondary:
+      - Impale
+      - Rapid Fire
+      - Chakram
+      - Elemental Arrow
+    Defensive:
+      - Caltrops
+      - Smoke Screen
+      - Shadow Power
+    Hunting:
+      - Vault
+      - Preparation
+      - Companion
+      - Marked for Death
+    Devices:
+      - Evasive Fire
+      - Fan of Knives
+      - Spike Trap
+      - Sentry
+    Archery:
+      - Strafe
+      - Multishot
+      - Cluster Arrow
+      - Rain of Vengeance
+
+  Monk:
+    Primary:
+      - Fists of Thunder
+      - Deadly Reach
+      - Crippling Wave
+      - Way of the Hundred Fists
+    Secondary:
+      - Lashing Tail Kick
+      - Tempest Rush
+      - Wave of Light
+    Defensive:
+      - Blinding Flash
+      - Breath of Heaven
+      - Serenity
+      - Inner Sanctuary
+    Techniques:
+      - Dashing Strike
+      - Exploding Palm
+      - Sweeping Wind
+    Focus:
+      - Cyclone Strike
+      - Seven Sided Strike
+      - Mystic Ally
+    Mantras:
+      - Mantra of Salvation
+      - Mantra of Retribution
+      - Mantra of Healing
+      - Mantra of Conviction
+
+  Witch Doctor:
+    Primary:
+      - Poison Dart
+      - Corpse Spiders
+      - Plague of Toads
+      - Firebomb
+    Secondary:
+      - Grasp of the Dead
+      - Firebats
+      - Haunt
+      - Locust Swarm
+    Defensive:
+      - Summon Zombie Dogs
+      - Horrify
+      - Spirit Walk
+      - Hex
+    Terror:
+      - Soul Harvest
+      - Sacrifice
+      - Mass Confusion
+    Decay:
+      - Zombie Charger
+      - Spirit Barrage
+      - Acid Cloud
+      - Wall of Zombies
+      - Piranhas
+    Voodoo:
+      - Gargantuan
+      - Big Bad Voodoo
+      - Fetish Army
+
+  Wizard:
+    Primary:
+      - Magic Missile
+      - Shock Pulse
+      - Spectral Blade
+      - Electrocute
+    Secondary:
+      - Ray of Frost
+      - Arcane Orb
+      - Arcane Torrent
+      - Disintegrate
+    Defensive:
+      - Frost Nova
+      - Diamond Skin
+      - Slow Time
+      - Teleport
+    Force:
+      - Wave of Force
+      - Energy Twister
+      - Hydra
+      - Meteor
+      - Blizzard
+    Conjuration:
+      - Ice Armor
+      - Storm Armor
+      - Magic Weapon
+      - Familiar
+      - Energy Armor
+    Mastery:
+      - Explosive Blast
+      - Mirror Image
+      - Archon
