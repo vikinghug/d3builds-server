@@ -1,15 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @klass.title %>
+  <h1><%= @klass.title %> Skills</h1>
 </p>
 
 <p>
-  <strong>Skills:</strong>
   <ul>
     <% @klass.skill_categories.each do |skill_category| %>
-      <strong><%= skill_category.order %>: <%= skill_category.title %></strong>
+      <strong><%= skill_category.title %> <span class=""><%= skill_category.order %></span></strong>
       <ul>
         <% skill_category.skills.each do |skill| %>
           <li><%= skill.order %>: <%= link_to skill.title, skill %></li>
