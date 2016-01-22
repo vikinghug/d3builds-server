@@ -4,7 +4,16 @@ class SkillsController < ApplicationController
   # GET /skills
   # GET /skills.json
   def index
-    @skills = Skill.all
+    filter = {
+      klass_id: params[:class_id],
+      skill_category_id: params[:skill_category_id]
+    }.compact
+
+    if !filter.empty?
+      @skills = Skill.where(filter)
+    else
+      @skills = Skill.all
+    end
   end
 
   # GET /skills/1

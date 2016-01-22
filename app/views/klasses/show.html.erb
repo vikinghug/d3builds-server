@@ -17,5 +17,9 @@
   </ul>
 </p>
 
+<p>
+  <%= @klass.passive_skills.map(&:title).join(', ') %>
+</p>
+
 <%= link_to 'Edit', edit_klass_path(@klass) %> |
 <%= link_to 'Back', klasses_path %>

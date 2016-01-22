@@ -1,222 +1,235 @@
 klasses:
   Barbarian:
-    Primary:
-      Bash                     : ["", "Frostbite", "Onslaught", "Punish", "Instigation", "Pulverize"]
-      Cleave                   : ["", "Rupture", "Reaping Swing", "Scattering Blast", "Broad Sweep", "Gathering Storm"]
-      Frenzy                   : ["", "Sidearm", "Berserk", "Vanguard", "Smite", "Maniac"]
-      Weapon Throw             : ["", "Mighty Throw", "Ricochet", "Throwing Hammer", "Stupefy", "Balanced Weapon"]
+    active_skills:
+      Primary:
+        Bash                     : ["", "Frostbite", "Onslaught", "Punish", "Instigation", "Pulverize"]
+        Cleave                   : ["", "Rupture", "Reaping Swing", "Scattering Blast", "Broad Sweep", "Gathering Storm"]
+        Frenzy                   : ["", "Sidearm", "Berserk", "Vanguard", "Smite", "Maniac"]
+        Weapon Throw             : ["", "Mighty Throw", "Ricochet", "Throwing Hammer", "Stupefy", "Balanced Weapon"]
 
-    Secondary:
-      Hammer of the Ancients   : ["", "Rolling Thunder", "Smash", "The Devil's Anvil", "Thunderstrike", "Birthright"]
-      Rend                     : ["", "Ravage", "Blood Lust", "Lacerate", "Mutilate", "Bloodbath"]
-      Seismic Slam             : ["", "Stagger", "Shattered Ground", "Rumble", "Strength from Earth", "Permafrost"]
-      Whirlwind                : ["", "Dust Devils", "Hurricane", "Blood Funnel", "Wind Shear", "Volcanic Eruption"]
-      Ancient Spear            : ["", "Ranseur", "Harpoon", "Jadded Edge", "Boulder Toss", "Rage Flip"]
+      Secondary:
+        Hammer of the Ancients   : ["", "Rolling Thunder", "Smash", "The Devil's Anvil", "Thunderstrike", "Birthright"]
+        Rend                     : ["", "Ravage", "Blood Lust", "Lacerate", "Mutilate", "Bloodbath"]
+        Seismic Slam             : ["", "Stagger", "Shattered Ground", "Rumble", "Strength from Earth", "Permafrost"]
+        Whirlwind                : ["", "Dust Devils", "Hurricane", "Blood Funnel", "Wind Shear", "Volcanic Eruption"]
+        Ancient Spear            : ["", "Ranseur", "Harpoon", "Jadded Edge", "Boulder Toss", "Rage Flip"]
 
-    Defensive:
-      Ground Stomp             : ["", "Deafening Crash", "Wrenching Smash", "Trembling Stomp", "Foot of the Mountain", "Jarring Slam"]
-      Leap                     : ["", "Iron Impact", "Launch", "Toppling Impact", "Call of Arreat", "Death from Above"]
-      Sprint                   : ["", "Rush", "Run Like the Wind", "Marathon", "Gangway", "Forced March"]
-      Ignore Pain              : ["", "Bravado", "Iron Hide", "Ignorance is Bliss", "Mob Rule", "Contempt for Weakness"]
+      Defensive:
+        Ground Stomp             : ["", "Deafening Crash", "Wrenching Smash", "Trembling Stomp", "Foot of the Mountain", "Jarring Slam"]
+        Leap                     : ["", "Iron Impact", "Launch", "Toppling Impact", "Call of Arreat", "Death from Above"]
+        Sprint                   : ["", "Rush", "Run Like the Wind", "Marathon", "Gangway", "Forced March"]
+        Ignore Pain              : ["", "Bravado", "Iron Hide", "Ignorance is Bliss", "Mob Rule", "Contempt for Weakness"]
 
-    Might:
-      Overpower                : ["", "Storm of Steel", "Killing Spree", "Crushing Advance", "Momentum", "Revel"]
-      Revenge                  : ["", "Blood Law", "Best Served Cold", "Retribution", "Grudge", "Provocation"]
-      Furious Charge           : ["", "Battering Ram", "Merciless Assault", "Stamina", "Cold Rush", "Dreadnought"]
-      Avalanche                : ["", "Volcano", "Lahar", "Snow-Capped Mountain", "Tectonic Rift", "Glacier"]
+      Might:
+        Overpower                : ["", "Storm of Steel", "Killing Spree", "Crushing Advance", "Momentum", "Revel"]
+        Revenge                  : ["", "Blood Law", "Best Served Cold", "Retribution", "Grudge", "Provocation"]
+        Furious Charge           : ["", "Battering Ram", "Merciless Assault", "Stamina", "Cold Rush", "Dreadnought"]
+        Avalanche                : ["", "Volcano", "Lahar", "Snow-Capped Mountain", "Tectonic Rift", "Glacier"]
 
-    Tactics:
-      Threatening Shout        : ["", "Intimidate", "Falter", "Grim Harvest", "Demoralize", "Terrify"]
-      Battle Rage              : ["", "Marauder's Rage", "Ferocity", "Swords to Ploughshares", "Into the Fray", "Bloodshed"]
-      War Cry                  : ["", "Hardened Wrath", "Charge!", "Invigorate", "Veteran's Warning", "Impunity"]
+      Tactics:
+        Threatening Shout        : ["", "Intimidate", "Falter", "Grim Harvest", "Demoralize", "Terrify"]
+        Battle Rage              : ["", "Marauder's Rage", "Ferocity", "Swords to Ploughshares", "Into the Fray", "Bloodshed"]
+        War Cry                  : ["", "Hardened Wrath", "Charge!", "Invigorate", "Veteran's Warning", "Impunity"]
 
-    Rage:
-      Earthquake               : ["", "Giant's Stride", "Chilling Earth", "The Mountain's Call", "Molten Fury", "Cave-In"]
-      Call of the Ancients     : ["", "The Council Rises", "Duty to the Clan", "Duty to the Clan", "Ancient' Blessing", "Ancients' Fury", "Together as One"]
-      Wrath of the Berserker   : ["", "Arreat's Wail", "Insanity", "Slaughter", "Striding Giant", "Thrive on Chaos"]
+      Rage:
+        Earthquake               : ["", "Giant's Stride", "Chilling Earth", "The Mountain's Call", "Molten Fury", "Cave-In"]
+        Call of the Ancients     : ["", "The Council Rises", "Duty to the Clan", "Duty to the Clan", "Ancient' Blessing", "Ancients' Fury", "Together as One"]
+        Wrath of the Berserker   : ["", "Arreat's Wail", "Insanity", "Slaughter", "Striding Giant", "Thrive on Chaos"]
 
+    passive_skills: ["Pound of Flesh", "Ruthless", "Nerves Of Steel", "Weapons Master", "Inspiring Presence", "Berserker Rage", "Bloodthirst", "Animosity", "Superstition", "Tough as Nails", "No Escape", "Relentless", "Brawler", "Juggernaut", "Unforgiving", "Boon of Bul-Kathos", "Earthen Might", "Sword and Board", "Rampage"]
 
   Crusader:
-    Primary:
-      Punish                   : ["", "Roar", "Celerity", "Rebirth", "Retaliate", "Fury"]
-      Slash                    : ["", "Electrify", "Carve", "Crush", "Zeal", "Guard"]
-      Smite                    : ["", "Shatter", "Shackle", "Surge", "Reaping", "Shared Fate"]
-      Justice                  : ["", "Burst", "Crack", "Hammer of Pursuit", "Sword of Justice", "Holy Bolt"]
+    active_skills:
+      Primary:
+        Punish                   : ["", "Roar", "Celerity", "Rebirth", "Retaliate", "Fury"]
+        Slash                    : ["", "Electrify", "Carve", "Crush", "Zeal", "Guard"]
+        Smite                    : ["", "Shatter", "Shackle", "Surge", "Reaping", "Shared Fate"]
+        Justice                  : ["", "Burst", "Crack", "Hammer of Pursuit", "Sword of Justice", "Holy Bolt"]
 
-    Secondary:
-      Shield Bash              : ["", "Shattered Shield", "One on One", "Shield Cross", "Crumble", "Pound"]
-      Sweep Attack             : ["", "Blazing Sweep", "Trip Attack", "Holy Shock", "Gathering Sweep", "Frozen Sweep"]
-      Blessed Hammer           : ["", "Burning Watch", "Thunderstruck", "Limitless", "Icebound Hammer", "Dominion"]
-      Blessed Shield           : ["", "Staggering Shield", "Combust", "Divine Aegis", "Shattering Throw", "Piercing Shield"]
-      Fist of the Heavens      : ["", "Divine Well", "Heaven's Tempest", "Fissure", "Reverberation", "Retribution"]
+      Secondary:
+        Shield Bash              : ["", "Shattered Shield", "One on One", "Shield Cross", "Crumble", "Pound"]
+        Sweep Attack             : ["", "Blazing Sweep", "Trip Attack", "Holy Shock", "Gathering Sweep", "Frozen Sweep"]
+        Blessed Hammer           : ["", "Burning Watch", "Thunderstruck", "Limitless", "Icebound Hammer", "Dominion"]
+        Blessed Shield           : ["", "Staggering Shield", "Combust", "Divine Aegis", "Shattering Throw", "Piercing Shield"]
+        Fist of the Heavens      : ["", "Divine Well", "Heaven's Tempest", "Fissure", "Reverberation", "Retribution"]
 
-    Defensive:
-      Shield Glare             : ["", "Divine Verdict", "Uncertainty", "Zealous Glare", "Emblazoned Shield", "Subdue"]
-      Iron Skin                : ["", "Reflective Skin", "Steel Skin", "Explosive Skin", "Charged Up", "Flash"]
-      Consecration             : ["", "Bathed in Light", "Frozen Ground", "Aegis Purgatory", "Shattered Ground", "Fearful"]
-      Judgement                : ["", "Penitence", "Mass Verdict", "Deliberation", "Resolved", "Conversion"]
+      Defensive:
+        Shield Glare             : ["", "Divine Verdict", "Uncertainty", "Zealous Glare", "Emblazoned Shield", "Subdue"]
+        Iron Skin                : ["", "Reflective Skin", "Steel Skin", "Explosive Skin", "Charged Up", "Flash"]
+        Consecration             : ["", "Bathed in Light", "Frozen Ground", "Aegis Purgatory", "Shattered Ground", "Fearful"]
+        Judgement                : ["", "Penitence", "Mass Verdict", "Deliberation", "Resolved", "Conversion"]
 
-    Utility:
-      Provoke                  : ["", "Cleanse", "Flee Fool", "Too Scared to Run", "Charged Up", "Hit Me"]
-      Steed Charge             : ["", "Ramming Speed", "Nightmare", "Rejuvenation", "Endurance", "Draw and Quarter"]
-      Condemn                  : ["", "Vacuum", "Unleashed", "Eternal Retaliation", "Shattering Explosion", "Reciprocate"]
-      Phalanx                  : ["", "Bowmen", "Shield Charge", "Stampede", "Shield Bearers", "Bodyguard"]
+      Utility:
+        Provoke                  : ["", "Cleanse", "Flee Fool", "Too Scared to Run", "Charged Up", "Hit Me"]
+        Steed Charge             : ["", "Ramming Speed", "Nightmare", "Rejuvenation", "Endurance", "Draw and Quarter"]
+        Condemn                  : ["", "Vacuum", "Unleashed", "Eternal Retaliation", "Shattering Explosion", "Reciprocate"]
+        Phalanx                  : ["", "Bowmen", "Shield Charge", "Stampede", "Shield Bearers", "Bodyguard"]
 
-    Laws:
-      Laws of Valor            : ["", "Invincible", "Frozen in Terror", "Critical", "Unstoppable Force", "Answered Prayer"]
-      Laws of Justice          : ["", "Protect the Innocent", "Immovable Object", "Faith's Armor", "Decaying Strength", "Bravery"]
-      Laws of Hope             : ["", "Wings of Angels", "Eternal Hope", "Hopeful Cry", "Faith's Reward", "Promise of Faith"]
+      Laws:
+        Laws of Valor            : ["", "Invincible", "Frozen in Terror", "Critical", "Unstoppable Force", "Answered Prayer"]
+        Laws of Justice          : ["", "Protect the Innocent", "Immovable Object", "Faith's Armor", "Decaying Strength", "Bravery"]
+        Laws of Hope             : ["", "Wings of Angels", "Eternal Hope", "Hopeful Cry", "Faith's Reward", "Promise of Faith"]
 
-    Conviction:
-      Falling Sword            : ["", "Superheated", "Part the Clouds", "Rise Brothers", "Rapid Descent", "Flurry"]
-      Akarat's Champion"       : ["", "Fire Starter", "Embodiment of Power", "Rally", "Prophet", "Hasteful"]
-      Heaven's Fury"           : ["", "Blessed Ground", "Ascendancy", "Split Fury", "Thou Shalt Not Pass", "Fires of Heaven"]
-      Bombardment              : ["", "Barrels of Tar", "Annihilate", "Mine Field", "Impactful Bombardment", "Targeted"]
+      Conviction:
+        Falling Sword            : ["", "Superheated", "Part the Clouds", "Rise Brothers", "Rapid Descent", "Flurry"]
+        Akarat's Champion"       : ["", "Fire Starter", "Embodiment of Power", "Rally", "Prophet", "Hasteful"]
+        Heaven's Fury"           : ["", "Blessed Ground", "Ascendancy", "Split Fury", "Thou Shalt Not Pass", "Fires of Heaven"]
+        Bombardment              : ["", "Barrels of Tar", "Annihilate", "Mine Field", "Impactful Bombardment", "Targeted"]
 
+    passive_skills: ["Fervor", "Heavenly Strength", "Vigilant", "Righteousness", "Fantacism", "Insurmountable", "Indestructible", "Holy Cause", "Divine Fortress", "Wrathful", "Lord Commander", "Hold Your Ground", "Long Arm of the Law", "Iron Maiden", "Renewal", "Finery", "Blunt", "Towering Shield"]
 
   Demon Hunter:
-    Primary:
-      Hungering Arrow          : ["", "Puncturing Arrow", "Cinder Arrow", "Shatter Shot", "Devouring Arrow", "Spray of Teeth"]
-      Entangling Shot          : ["", "Chain Gang", "Shock Collar", "Heavy Burden", "Justice is Served", "Bounty Hunter"]
-      Bola Shot                : ["", "Volatile Explosives", "Thunder Ball", "Acid Strike", "Bitter Pill", "Imminent Doom"]
-      Grenades                 : ["", "Tinkerer", "Cluster Grenades", "Fire Bomb", "Stun Grenades", "Gas Grenades"]
+    active_skills:
+      Primary:
+        Hungering Arrow          : ["", "Puncturing Arrow", "Cinder Arrow", "Shatter Shot", "Devouring Arrow", "Spray of Teeth"]
+        Entangling Shot          : ["", "Chain Gang", "Shock Collar", "Heavy Burden", "Justice is Served", "Bounty Hunter"]
+        Bola Shot                : ["", "Volatile Explosives", "Thunder Ball", "Acid Strike", "Bitter Pill", "Imminent Doom"]
+        Grenades                 : ["", "Tinkerer", "Cluster Grenades", "Fire Bomb", "Stun Grenades", "Gas Grenades"]
 
-    Secondary:
-      Impale                   : ["", "Impact", "Chemical Burn", "Overpenetration", "Awareness", "Grievous Wounds"]
-      Rapid Fire               : ["", "Withering Fire", "Web Shot", "Fire Support", "High Velocity", "Bombardment"]
-      Chakram                  : ["", "Twin Chakrams", "Serpentine", "Razor Disk", "Boomerang", "Shuriken Cloud"]
-      Elemental Arrow          : ["", "Ball Lightning", "Frost Arrow", "Screaming Skull", "Lightning Bolts", "Nether Tentacles"]
+      Secondary:
+        Impale                   : ["", "Impact", "Chemical Burn", "Overpenetration", "Awareness", "Grievous Wounds"]
+        Rapid Fire               : ["", "Withering Fire", "Web Shot", "Fire Support", "High Velocity", "Bombardment"]
+        Chakram                  : ["", "Twin Chakrams", "Serpentine", "Razor Disk", "Boomerang", "Shuriken Cloud"]
+        Elemental Arrow          : ["", "Ball Lightning", "Frost Arrow", "Screaming Skull", "Lightning Bolts", "Nether Tentacles"]
 
-    Defensive:
-      Caltrops                 : ["", "Hooked Spines", "Torturous Ground", "Jagged Spikes", "Carved Stakes", "Bait the Trap"]
-      Smoke Screen             : ["", "Displacement", "Lingering Fog", "Breathe Deep", "Special Recipe", "Choking Gas"]
-      Shadow Power             : ["", "Night Bane", "Blood Moon", "Well of Darkness", "Gloom", "Shadow Glide"]
+      Defensive:
+        Caltrops                 : ["", "Hooked Spines", "Torturous Ground", "Jagged Spikes", "Carved Stakes", "Bait the Trap"]
+        Smoke Screen             : ["", "Displacement", "Lingering Fog", "Breathe Deep", "Special Recipe", "Choking Gas"]
+        Shadow Power             : ["", "Night Bane", "Blood Moon", "Well of Darkness", "Gloom", "Shadow Glide"]
 
-    Hunting:
-      Vault                    : ["", "Action Shot", "Rattling Roll", "Tumble", "Acrobatics", "Trail of Cinders"]
-      Preparation              : ["", "Invigoration", "Punishment", "Battle Scars", "Focused Mind", "Backup Plan"]
-      Companion                : ["", "Spider Companion", "Bat Companion", "Boar Companion", "Ferret Companion", "Wolf Companion"]
-      Marked for Death         : ["", "Contagion", "Valley of Death", "Grim Reaper", "Mortal Enemy", "Death Toll"]
+      Hunting:
+        Vault                    : ["", "Action Shot", "Rattling Roll", "Tumble", "Acrobatics", "Trail of Cinders"]
+        Preparation              : ["", "Invigoration", "Punishment", "Battle Scars", "Focused Mind", "Backup Plan"]
+        Companion                : ["", "Spider Companion", "Bat Companion", "Boar Companion", "Ferret Companion", "Wolf Companion"]
+        Marked for Death         : ["", "Contagion", "Valley of Death", "Grim Reaper", "Mortal Enemy", "Death Toll"]
 
-    Devices:
-      Evasive Fire             : ["", "Shrapnel", "Parting Gift", "Covering Fire", "Displace", "Surge"]
-      Fan of Knives            : ["", "Crippling Razors", "Retaliate", "Hail of Knives", "Fan of Daggers", "Assassin's Knives"]
-      Spike Trap               : ["", "Bandolier", "Sticky Trap", "Long Fuse", "Lightning Rod", "Scatter"]
-      Sentry                   : ["", "Spitfire Turret", "Vigilant Watcher", "Chain of Torment", "Aid Station", "Guardian Turret"]
+      Devices:
+        Evasive Fire             : ["", "Shrapnel", "Parting Gift", "Covering Fire", "Displace", "Surge"]
+        Fan of Knives            : ["", "Crippling Razors", "Retaliate", "Hail of Knives", "Fan of Daggers", "Assassin's Knives"]
+        Spike Trap               : ["", "Bandolier", "Sticky Trap", "Long Fuse", "Lightning Rod", "Scatter"]
+        Sentry                   : ["", "Spitfire Turret", "Vigilant Watcher", "Chain of Torment", "Aid Station", "Guardian Turret"]
 
-    Archery:
-      Strafe                   : ["", "Equilibrium", "Drifting Shadow", "Stinging Steel", "Rocket Storm", "Demolition"]
-      Multishot                : ["", "Fire at Will", "Burst Fire", "Suppression Fire", "Full Broadside", "Arsenal"]
-      Cluster Arrow            : ["", "Dazzling Arrow", "Shooting Stars", "Maelstrom", "Cluster Bombs", "Loaded for Bear"]
-      Rain of Vengeance        : ["", "Dark Cloud", "Beastly Bombs", "Stampede", "Anathema", "Flying Strike"]
+      Archery:
+        Strafe                   : ["", "Equilibrium", "Drifting Shadow", "Stinging Steel", "Rocket Storm", "Demolition"]
+        Multishot                : ["", "Fire at Will", "Burst Fire", "Suppression Fire", "Full Broadside", "Arsenal"]
+        Cluster Arrow            : ["", "Dazzling Arrow", "Shooting Stars", "Maelstrom", "Cluster Bombs", "Loaded for Bear"]
+        Rain of Vengeance        : ["", "Dark Cloud", "Beastly Bombs", "Stampede", "Anathema", "Flying Strike"]
 
+    passive_skills: ["Tactical Advantage", "Thrill of the Hunt", "Vengeance", "Steady Aim", "Cull the Weak", "Night Stalker", "Brooding", "Hot Pursuit", "Archery", "Numbing Traps", "Perfectionist", "Custom Engineering", "Grenadier", "Sharpshooter", "Ballistics"]
 
   Monk:
-    Primary:
-      Fists of Thunder         : ["", "Thunderclap", "Lightning Flash", "Static Charge", "Quickening", "Bounding Light"]
-      Deadly Reach             : ["", "Piercing Trident", "Keen Eye", "Scattered Blows", "Strike from Beyond", "Foresight"]
-      Crippling Wave           : ["", "Mangle", "Concussion", "Rising Tide", "Tsunami", "Breaking Wave"]
-      Way of the Hundred Fists : ["", "Hands of Lightning", "Blazing Fists", "Fists of Fury", "Spirited Salvo", "Windforce Flurry"]
+    active_skills:
+      Primary:
+        Fists of Thunder         : ["", "Thunderclap", "Lightning Flash", "Static Charge", "Quickening", "Bounding Light"]
+        Deadly Reach             : ["", "Piercing Trident", "Keen Eye", "Scattered Blows", "Strike from Beyond", "Foresight"]
+        Crippling Wave           : ["", "Mangle", "Concussion", "Rising Tide", "Tsunami", "Breaking Wave"]
+        Way of the Hundred Fists : ["", "Hands of Lightning", "Blazing Fists", "Fists of Fury", "Spirited Salvo", "Windforce Flurry"]
 
-    Secondary:
-      Lashing Tail Kick        : ["", "Vulture Claw Kick", "Sweeping Armada", "Spinning Flame Kick", "Scorpion Sting", "Hand of Ytar"]
-      Tempest Rush             : ["", "Northern Breeze", "Tailwind", "Flurry", "Slipstream", "Bluster"]
-      Wave of Light            : ["", "Wall of Light", "Explosive Light", "Empowered Wave", "Blinding Light", "Pillar of the Ancients"]
+      Secondary:
+        Lashing Tail Kick        : ["", "Vulture Claw Kick", "Sweeping Armada", "Spinning Flame Kick", "Scorpion Sting", "Hand of Ytar"]
+        Tempest Rush             : ["", "Northern Breeze", "Tailwind", "Flurry", "Slipstream", "Bluster"]
+        Wave of Light            : ["", "Wall of Light", "Explosive Light", "Empowered Wave", "Blinding Light", "Pillar of the Ancients"]
 
-    Defensive:
-      Blinding Flash           : ["", "Self Reflection", "Blinded and Confused", "Blinding Echo", "Searing Light", "Faith in the Light"]
-      Breath of Heaven         : ["", "Circle of Scorn", "Circle of Life", "Blazing Wrath", "Infused with Light", "Penitent Flame"]
-      Serenity                 : ["", "Peaceful Repose", "Reap What Is Sown", "Tranquility", "Ascension", "Instant Karma"]
-      Inner Sanctuary          : ["", "Safe Haven", "Sanctified Ground", "Consecration", "Circle of Protection", "Forbidden Palace"]
+      Defensive:
+        Blinding Flash           : ["", "Self Reflection", "Blinded and Confused", "Blinding Echo", "Searing Light", "Faith in the Light"]
+        Breath of Heaven         : ["", "Circle of Scorn", "Circle of Life", "Blazing Wrath", "Infused with Light", "Penitent Flame"]
+        Serenity                 : ["", "Peaceful Repose", "Reap What Is Sown", "Tranquility", "Ascension", "Instant Karma"]
+        Inner Sanctuary          : ["", "Safe Haven", "Sanctified Ground", "Consecration", "Circle of Protection", "Forbidden Palace"]
 
-    Techniques:
-      Dashing Strike           : ["", "Way of the Falling Star", "Flying Side Kick", "Quicksilver", "Soaring Skull", "Blinding Speed"]
-      Exploding Palm           : ["", "The Flesh is Weak", "Strong Spirit", "Creeping Demise", "Impending Doom", "Essence Burn"]
-      Sweeping Wind            : ["", "Master of Wind", "Blade Storm", "Fire Storm", "Inner Storm", "Cyclone"]
+      Techniques:
+        Dashing Strike           : ["", "Way of the Falling Star", "Flying Side Kick", "Quicksilver", "Soaring Skull", "Blinding Speed"]
+        Exploding Palm           : ["", "The Flesh is Weak", "Strong Spirit", "Creeping Demise", "Impending Doom", "Essence Burn"]
+        Sweeping Wind            : ["", "Master of Wind", "Blade Storm", "Fire Storm", "Inner Storm", "Cyclone"]
 
-    Focus:
-      Cyclone Strike           : ["", "Eye of the Storm", "Implosion", "Sunburst", "Wall of Wind", "Soothing Breeze"]
-      Seven Sided Strike       : ["", "Sudden Assault", "Several-Sided Strike", "Pandemonium", "Sustained Attack", "Fulminating Onslaught"]
-      Mystic Ally              : ["", "Water Ally", "Fire Ally", "Air Ally", "Eternal Ally", "Earth Ally"]
+      Focus:
+        Cyclone Strike           : ["", "Eye of the Storm", "Implosion", "Sunburst", "Wall of Wind", "Soothing Breeze"]
+        Seven Sided Strike       : ["", "Sudden Assault", "Several-Sided Strike", "Pandemonium", "Sustained Attack", "Fulminating Onslaught"]
+        Mystic Ally              : ["", "Water Ally", "Fire Ally", "Air Ally", "Eternal Ally", "Earth Ally"]
 
-    Mantras:
-      Mantra of Salvation      : ["", "Hard Target", "Divine Protection", "Wind through the Reeds", "Perseverance", "Agility"]
-      Mantra of Retribution    : ["", "Retaliation", "Transgression", "Indignation", "Against All Odds", "Collateral Damage"]
-      Mantra of Healing        : ["", "Sustenance", "Circular Breathing", "Boon of Protection", "Heavenly Body", "Time of Need"]
-      Mantra of Conviction     : ["", "Overawe", "Intimidation", "Dishearten", "Annihilation", "Submission"]
+      Mantras:
+        Mantra of Salvation      : ["", "Hard Target", "Divine Protection", "Wind through the Reeds", "Perseverance", "Agility"]
+        Mantra of Retribution    : ["", "Retaliation", "Transgression", "Indignation", "Against All Odds", "Collateral Damage"]
+        Mantra of Healing        : ["", "Sustenance", "Circular Breathing", "Boon of Protection", "Heavenly Body", "Time of Need"]
+        Mantra of Conviction     : ["", "Overawe", "Intimidation", "Dishearten", "Annihilation", "Submission"]
 
+    passive_skills: ["Fleet Footed", "Resolve", "Exalted Soul", "Transcendence", "Chant of Resonance", "Seize the Initiative", "The Guardian's Path", "Sixth Sense", "Pacifism", "Beacon of Ytar", "Guiding Light", "One With Everything", "Combination Strike", "Near Death Experience"]
 
   Witch Doctor:
-    Primary:
-      Poison Dart              : ["", "Splinters", "Numbing Dart", "Spined Dart", "Flaming Dart", "Snake to the Face"]
-      Corpse Spiders           : ["", "Leaping Spiders", "Spider Queen", "Widowmakers", "Medusa Spiders", "Blazing Spiders"]
-      Plague of Toads          : ["", "Explosive Toads", "Toad of Hugeness", "Rain of Toads", "Addling Toads", "Toad Affinity"]
-      Firebomb                 : ["", "Flash Fire", "Roll the Bones", "Fire Pit", "Pyrogeist", "Ghost Bomb"]
+    active_skills:
+      Primary:
+        Poison Dart              : ["", "Splinters", "Numbing Dart", "Spined Dart", "Flaming Dart", "Snake to the Face"]
+        Corpse Spiders           : ["", "Leaping Spiders", "Spider Queen", "Widowmakers", "Medusa Spiders", "Blazing Spiders"]
+        Plague of Toads          : ["", "Explosive Toads", "Toad of Hugeness", "Rain of Toads", "Addling Toads", "Toad Affinity"]
+        Firebomb                 : ["", "Flash Fire", "Roll the Bones", "Fire Pit", "Pyrogeist", "Ghost Bomb"]
 
-    Secondary:
-      Grasp of the Dead        : ["", "Unbreakable Grasp", "Groping Eels", "Death Is Life", "Desperate Grasp", "Rain of Corpses"]
-      Firebats                 : ["", "Dire Bats", "Vampire Bats", "Plague Bats", "Hungry Bats", "Cloud of Bats"]
-      Haunt                    : ["", "Consuming Spirit", "Resentful Spirit", "Lingering Spirit", "Poisoned Spirit", "Draining Spirit"]
-      Locust Swarm             : ["", "Pestilence", "Devouring Swarm", "Cloud of Insects", "Diseased Swarm", "Searing Locusts"]
+      Secondary:
+        Grasp of the Dead        : ["", "Unbreakable Grasp", "Groping Eels", "Death Is Life", "Desperate Grasp", "Rain of Corpses"]
+        Firebats                 : ["", "Dire Bats", "Vampire Bats", "Plague Bats", "Hungry Bats", "Cloud of Bats"]
+        Haunt                    : ["", "Consuming Spirit", "Resentful Spirit", "Lingering Spirit", "Poisoned Spirit", "Draining Spirit"]
+        Locust Swarm             : ["", "Pestilence", "Devouring Swarm", "Cloud of Insects", "Diseased Swarm", "Searing Locusts"]
 
-    Defensive:
-      Summon Zombie Dogs       : ["", "Rabid Dogs", "Final Gift", "Life Link", "Burning Dogs", "Leeching Beasts"]
-      Horrify                  : ["", "Phobia", "Stalker", "Face of Death", "Frightening Aspect", "Ruthless Terror"]
-      Spirit Walk              : ["", "Jaunt", "Honored Guest", "Umbral Shock", "Severance", "Healing Journey"]
-      Hex                      : ["", "Hedge Magic", "Jinx", "Angry Chicken", "Painful Transformation", "Unstable Form"]
+      Defensive:
+        Summon Zombie Dogs       : ["", "Rabid Dogs", "Final Gift", "Life Link", "Burning Dogs", "Leeching Beasts"]
+        Horrify                  : ["", "Phobia", "Stalker", "Face of Death", "Frightening Aspect", "Ruthless Terror"]
+        Spirit Walk              : ["", "Jaunt", "Honored Guest", "Umbral Shock", "Severance", "Healing Journey"]
+        Hex                      : ["", "Hedge Magic", "Jinx", "Angry Chicken", "Painful Transformation", "Unstable Form"]
 
-    Terror:
-      Soul Harvest             : ["", "Swallow Your Soul", "Siphon", "Languish", "Soul to Waste", "Vengeful Spirit"]
-      Sacrifice                : ["", "Black Blood", "Next of Kin", "Pride", "For the Master", "Provoke the Pack"]
-      Mass Confusion           : ["", "Unstable Realm", "Devolution", "Mass Hysteria", "Paranoia", "Mass Hallucination"]
+      Terror:
+        Soul Harvest             : ["", "Swallow Your Soul", "Siphon", "Languish", "Soul to Waste", "Vengeful Spirit"]
+        Sacrifice                : ["", "Black Blood", "Next of Kin", "Pride", "For the Master", "Provoke the Pack"]
+        Mass Confusion           : ["", "Unstable Realm", "Devolution", "Mass Hysteria", "Paranoia", "Mass Hallucination"]
 
-    Decay:
-      Zombie Charger           : ["", "Leperous Zombie", "Undeath", "Wave of Zombies", "Explosive Beast", "Zombie Bears"]
-      Spirit Barrage           : ["", "The Spirit Is Willing", "Well of Souls", "Phantasm", "Phlebotomize", "Manitou"]
-      Acid Cloud               : ["", "Acid Rain", "Lob Blob Bomb", "Slow Burn", "Kiss of Death", "Corpse Bomb"]
-      Wall of Zombies          : ["", "Barricade", "Unrelenting Grip", "Creepers", "Pile On", "Dead Rush"]
-      Piranhas                 : ["", "Bogadile", "Zombie Piranhas", "Piranhado", "Wave of Mutilation", "Frozen Piranhas"]
+      Decay:
+        Zombie Charger           : ["", "Leperous Zombie", "Undeath", "Wave of Zombies", "Explosive Beast", "Zombie Bears"]
+        Spirit Barrage           : ["", "The Spirit Is Willing", "Well of Souls", "Phantasm", "Phlebotomize", "Manitou"]
+        Acid Cloud               : ["", "Acid Rain", "Lob Blob Bomb", "Slow Burn", "Kiss of Death", "Corpse Bomb"]
+        Wall of Zombies          : ["", "Barricade", "Unrelenting Grip", "Creepers", "Pile On", "Dead Rush"]
+        Piranhas                 : ["", "Bogadile", "Zombie Piranhas", "Piranhado", "Wave of Mutilation", "Frozen Piranhas"]
 
-    Voodoo:
-      Gargantuan               : ["", "Humongoid", "Restless Giant", "Wrathful Protector", "Big Stinker", "Bruiser"]
-      Big Bad Voodoo           : ["", "Jungle Drums", "Rain Dance", "Slam Dance", "Ghost Trance", "Boogie Man"]
-      Fetish Army              : ["", "Fetish Ambush", "Devoted Following", "Legion of Daggers", "Tiki Torches", "Head Hunters"]
+      Voodoo:
+        Gargantuan               : ["", "Humongoid", "Restless Giant", "Wrathful Protector", "Big Stinker", "Bruiser"]
+        Big Bad Voodoo           : ["", "Jungle Drums", "Rain Dance", "Slam Dance", "Ghost Trance", "Boogie Man"]
+        Fetish Army              : ["", "Fetish Ambush", "Devoted Following", "Legion of Daggers", "Tiki Torches", "Head Hunters"]
 
+    passive_skills: ["Circle of Life", "Jungle Fortitude", "Spiritual Attunement", "Gruesome Feast", "Bad Medicine", "Blood Ritual", "Zombie Handler", "Pierce the Veil", "Fetish Sycophants", "Spirit Vessel", "Rush of Essence", "Vision Quest", "Fierce Loyalty", "Grave Injustice", "Tribal Rites"]
 
   Wizard:
-    Primary:
-      Magic Missile            : ["", "Charged Blast", "Split", "Penetrating Blast", "Attunement", "Seeker"]
-      Shock Pulse              : ["", "Explosive Bolts", "Fire Bolts", "Piercing Orb", "Lightning Affinity", "Living Lightning"]
-      Spectral Blade           : ["", "Deep Cuts", "Impactful Blades", "Siphoning Blade", "Healing Blades", "Thrown Blade"]
-      Electrocute              : ["", "Chain Lightning", "Forked Lightning", "Lightning Blast", "Surge of Power", "Arc Lightning"]
+    active_skills:
+      Primary:
+        Magic Missile            : ["", "Charged Blast", "Split", "Penetrating Blast", "Attunement", "Seeker"]
+        Shock Pulse              : ["", "Explosive Bolts", "Fire Bolts", "Piercing Orb", "Lightning Affinity", "Living Lightning"]
+        Spectral Blade           : ["", "Deep Cuts", "Impactful Blades", "Siphoning Blade", "Healing Blades", "Thrown Blade"]
+        Electrocute              : ["", "Chain Lightning", "Forked Lightning", "Lightning Blast", "Surge of Power", "Arc Lightning"]
 
-    Secondary:
-      Ray of Frost             : ["", "Numb", "Snow Blast", "Cold Blood", "Sleet Storm", "Black Ice"]
-      Arcane Orb               : ["", "Obliteration", "Arcane Orbit", "Arcane Nova", "Tap the Source", "Celestial Orb"]
-      Arcane Torrent           : ["", "Disruption", "Death Blossom", "Arcane Mines", "Power Stone", "Cascade"]
-      Disintegrate             : ["", "Convergence", "Chaos Nexus", "Volatility", "Entropy", "Intensify"]
+      Secondary:
+        Ray of Frost             : ["", "Numb", "Snow Blast", "Cold Blood", "Sleet Storm", "Black Ice"]
+        Arcane Orb               : ["", "Obliteration", "Arcane Orbit", "Arcane Nova", "Tap the Source", "Celestial Orb"]
+        Arcane Torrent           : ["", "Disruption", "Death Blossom", "Arcane Mines", "Power Stone", "Cascade"]
+        Disintegrate             : ["", "Convergence", "Chaos Nexus", "Volatility", "Entropy", "Intensify"]
 
-    Defensive:
-      Frost Nova               : ["", "Shatter", "Cold Snap", "Frozen Mist", "Deep Freeze", "Bone Chill"]
-      Diamond Skin             : ["", "Crystal Shell", "Prism", "Mirror Skin", "Enduring Skin", "Diamond Shards"]
-      Slow Time                : ["", "Miasma", "Time Warp", "Time Shell", "Perpetuity", "Stretch Time"]
-      Teleport                 : ["", "Safe Passage", "Wormhole", "Reversal", "Fracture", "Calamity"]
+      Defensive:
+        Frost Nova               : ["", "Shatter", "Cold Snap", "Frozen Mist", "Deep Freeze", "Bone Chill"]
+        Diamond Skin             : ["", "Crystal Shell", "Prism", "Mirror Skin", "Enduring Skin", "Diamond Shards"]
+        Slow Time                : ["", "Miasma", "Time Warp", "Time Shell", "Perpetuity", "Stretch Time"]
+        Teleport                 : ["", "Safe Passage", "Wormhole", "Reversal", "Fracture", "Calamity"]
 
-    Force:
-      Wave of Force            : ["", "Impactful Wave", "Force Affinity", "Forceful Wave", "Teleporting Wave", "Exploding Wave"]
-      Energy Twister           : ["", "Mistral Breeze", "Gale Force", "Raging Storm", "Wicked Wind", "Storm Chaser"]
-      Hydra                    : ["", "Arcane Hydra", "Lightning Hydra", "Venom Hydra", "Frost Hydra", "Mammoth Hydra"]
-      Meteor                   : ["", "Molten Impact", "Star Pact", "Meteor Shower", "Comet", "Liquefy"]
-      Blizzard                 : ["", "Grasping Chill", "Frozen Solid", "Snowbound", "Stark Winter", "Unrelenting Storm"]
+      Force:
+        Wave of Force            : ["", "Impactful Wave", "Force Affinity", "Forceful Wave", "Teleporting Wave", "Exploding Wave"]
+        Energy Twister           : ["", "Mistral Breeze", "Gale Force", "Raging Storm", "Wicked Wind", "Storm Chaser"]
+        Hydra                    : ["", "Arcane Hydra", "Lightning Hydra", "Venom Hydra", "Frost Hydra", "Mammoth Hydra"]
+        Meteor                   : ["", "Molten Impact", "Star Pact", "Meteor Shower", "Comet", "Liquefy"]
+        Blizzard                 : ["", "Grasping Chill", "Frozen Solid", "Snowbound", "Stark Winter", "Unrelenting Storm"]
 
-    Conjuration:
-      Ice Armor                : ["", "Chilling Aura", "Crystallize", "Jagged Ice", "Ice Reflect", "Frozen Storm"]
-      Storm Armor              : ["", "Reactive Armor", "Power of the Storm", "Strike Back", "Scramble", "Shocking Aspect"]
-      Magic Weapon             : ["", "Electrify", "Force Weapon", "Conduit", "Venom", "Blood Magic"]
-      Familiar                 : ["", "Sparkflint", "Dartling", "Ancient Guardian", "Arcanot", "Cannoneer"]
-      Energy Armor             : ["", "Absorption", "Pinpoint Barrier", "Energy Tap", "Force Armor", "Prismatic Armor"]
+      Conjuration:
+        Ice Armor                : ["", "Chilling Aura", "Crystallize", "Jagged Ice", "Ice Reflect", "Frozen Storm"]
+        Storm Armor              : ["", "Reactive Armor", "Power of the Storm", "Strike Back", "Scramble", "Shocking Aspect"]
+        Magic Weapon             : ["", "Electrify", "Force Weapon", "Conduit", "Venom", "Blood Magic"]
+        Familiar                 : ["", "Sparkflint", "Dartling", "Ancient Guardian", "Arcanot", "Cannoneer"]
+        Energy Armor             : ["", "Absorption", "Pinpoint Barrier", "Energy Tap", "Force Armor", "Prismatic Armor"]
 
-    Mastery:
-      Explosive Blast          : ["", "Unleashed", "Time Bomb", "Short Fuse", "Obliterate", "Chain Reaction"]
-      Mirror Image             : ["", "Simulacrum", "Duplicates", "Mocking Demise", "Extension of Will", "Mirror Mimics"]
-      Archon                   : ["", "Supermassive", "Absolute Zero", "Event Horizon", "Blazar", "Spellsteal"]
+      Mastery:
+        Explosive Blast          : ["", "Unleashed", "Time Bomb", "Short Fuse", "Obliterate", "Chain Reaction"]
+        Mirror Image             : ["", "Simulacrum", "Duplicates", "Mocking Demise", "Extension of Will", "Mirror Mimics"]
+        Archon                   : ["", "Supermassive", "Absolute Zero", "Event Horizon", "Blazar", "Spellsteal"]
+
+    passive_skills: ["Blur", "Power Hungry", "Evocation", "Glass Cannon", "Prodigy", "Astral Presence", "Illusionist", "Cold Blooded", "Conflagration", "Paralysis", "Galvanizing Ward", "Temporal Flux", "Critical Mass", "Arcane Dynamo", "Unstable Anomaly"]

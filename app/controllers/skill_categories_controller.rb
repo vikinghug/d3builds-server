@@ -4,7 +4,11 @@ class SkillCategoriesController < ApplicationController
   # GET /skill_categories
   # GET /skill_categories.json
   def index
-    @skill_categories = SkillCategory.all
+    if params[:klass_id]
+      @skill_categories = SkillCategory.where(klass_id: params[:klass_id])
+    else
+      @skill_categories = SkillCategory.all
+    end
   end
 
   # GET /skill_categories/1
