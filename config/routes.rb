@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :skill_categories
+  resources :builds, only: [:index, :show]
   resources :skill_categories
 
   resources :classes, as: :klasses, controller: :klasses

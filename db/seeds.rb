@@ -1,12 +1,14 @@
 require 'yaml'
 
-seeds = begin
-  YAML.load(File.open("config/klasses.yml"))
+def load_yaml(filename)
+  YAML.load(File.open("config/#{filename}.yml"))
 rescue ArgumentError => e
   puts "Could not parse YAML: #{e.message}"
 end
 
-seeds['klasses'].each do |klass, klass_skill_types|
+yaml = load_yaml('klasses')
+
+yaml['klasses'].each do |klass, klass_skill_types|
   current_class = Klass.where(title: klass).first_or_create
 
   active_skill_category_index = 0
@@ -53,4 +55,27 @@ seeds['klasses'].each do |klass, klass_skill_types|
 
     passive_skill_index += 1
   end
+end
+
+yaml = load_yaml('builds')
+yaml['builds'].each do |build|
+  current_build = Build.where(
+    title: build['title'],
+    url: build['url']
+  ).first_or_create
+
+  build['active_skills'].each_with_index do |slot, i|
+    current_build.skill_slots.where(
+      position: i,
+      skill: Skill.where(title: slot['skill']).first,
+      rune: Rune.where(title: slot['rune']).first,
+    ).first_or_create
+  end
+
+  # passive_skills = build['passive_skills'].map do |skill|
+  #   PassiveSkill.where(title: skill).first
+  # end
+
+  # current_build.skill_slots = active_skills
+  # current_build.passive_skills = passive_skills
 end
