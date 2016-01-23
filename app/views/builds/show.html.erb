@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @build.title %> Build</h1>
+<h3><%= @build.class %></h3>
+<p><%= @build.url %></p>
+<ol>
+  <% @build.skill_slots.each do |slot| %>
+    <li>
+      <ul>
+        <li><%= slot.skill.title %></li>
+        <li><%= slot.rune.title %></li>
+      </ul>
+    </li>
+  <% end %>
+</ol>

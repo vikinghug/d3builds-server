@@ -1,0 +1,30 @@
+builds:
+  -
+    title: Zuni 2.2 Fetish
+    url: http://www.diablofans.com/builds/53692-zuni-2-2-fetish
+    class: Witch Doctor
+    active_skills:
+      -
+        skill: Haunt
+        rune: Poisoned Spirit
+      -
+        skill: Piranhas
+        rune: Piranhado
+      -
+        skill: Spirit Walk
+        rune: Jaunt
+      -
+        skill: Hex
+        rune: Jinx
+      -
+        skill: Fetish Army
+        rune: Legion of Daggers
+      -
+        skill: Big Bad Voodoo
+        rune: Slam Dance
+
+    passive_skills:
+      - Grave Injustice
+      - Gruesome Feast
+      - Pierce the Veil
+      - Spirit Vessel

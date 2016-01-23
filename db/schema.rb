@@ -11,13 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160121155809) do
+ActiveRecord::Schema.define(version: 20160122230816) do
+
+  create_table "builds", force: :cascade do |t|
+    t.string   "title"
+    t.string   "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "klasses", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "passive_skills", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "klass_id"
+    t.integer  "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "passive_skills", ["klass_id"], name: "index_passive_skills_on_klass_id"
 
   create_table "runes", force: :cascade do |t|
     t.string   "title"
@@ -29,6 +46,10 @@ ActiveRecord::Schema.define(version: 20160121155809) do
     t.datetime "updated_at",        null: false
   end
 
+  add_index "runes", ["klass_id"], name: "index_runes_on_klass_id"
+  add_index "runes", ["skill_category_id"], name: "index_runes_on_skill_category_id"
+  add_index "runes", ["skill_id"], name: "index_runes_on_skill_id"
+
   create_table "skill_categories", force: :cascade do |t|
     t.string   "title"
     t.integer  "klass_id"
@@ -38,6 +59,19 @@ ActiveRecord::Schema.define(version: 20160121155809) do
   end
 
   add_index "skill_categories", ["klass_id"], name: "index_skill_categories_on_klass_id"
+
+  create_table "skill_slots", force: :cascade do |t|
+    t.integer  "build_id"
+    t.integer  "skill_id"
+    t.integer  "rune_id"
+    t.integer  "position",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "skill_slots", ["build_id"], name: "index_skill_slots_on_build_id"
+  add_index "skill_slots", ["rune_id"], name: "index_skill_slots_on_rune_id"
+  add_index "skill_slots", ["skill_id"], name: "index_skill_slots_on_skill_id"
 
   create_table "skills", force: :cascade do |t|
     t.string   "title"
