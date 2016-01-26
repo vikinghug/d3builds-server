@@ -14,8 +14,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'factory_girl_rails'
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'valid_attribute'
 end
 
 group :development do
