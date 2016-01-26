@@ -2,14 +2,19 @@
 
 <h1><%= @build.title %> Build</h1>
 <h3><%= @build.class %></h3>
-<p><%= @build.url %></p>
+<p><%= link_to @build.url, @build.url %></p>
+<h4>Active Skills</h4>
 <ol>
   <% @build.skill_slots.each do |slot| %>
-    <li>
-      <ul>
-        <li><%= slot.skill.title %></li>
-        <li><%= slot.rune.title %></li>
-      </ul>
-    </li>
+    <li><strong><%= slot.skill.title %></strong>: <%= slot.rune.title %></li>
   <% end %>
 </ol>
+
+<h4>Passive Skills</h4>
+<ol>
+  <% @build.passive_slots.each do |slot| %>
+    <li><%= slot.passive_skill.title %></li>
+  <% end %>
+</ol>
+
+<%= link_to '&larr; Back to all Builds'.html_safe, builds_path %>
