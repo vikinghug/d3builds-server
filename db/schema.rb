@@ -11,14 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160122230816) do
+ActiveRecord::Schema.define(version: 20160123041506) do
 
   create_table "builds", force: :cascade do |t|
     t.string   "title"
     t.string   "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "klass_id"
   end
+
+  add_index "builds", ["klass_id"], name: "index_builds_on_klass_id"
 
   create_table "klasses", force: :cascade do |t|
     t.string   "title"
@@ -35,6 +38,17 @@ ActiveRecord::Schema.define(version: 20160122230816) do
   end
 
   add_index "passive_skills", ["klass_id"], name: "index_passive_skills_on_klass_id"
+
+  create_table "passive_slots", force: :cascade do |t|
+    t.integer  "build_id"
+    t.integer  "passive_skill_id"
+    t.integer  "position"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "passive_slots", ["build_id"], name: "index_passive_slots_on_build_id"
+  add_index "passive_slots", ["passive_skill_id"], name: "index_passive_slots_on_passive_skill_id"
 
   create_table "runes", force: :cascade do |t|
     t.string   "title"

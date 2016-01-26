@@ -61,6 +61,7 @@ yaml = load_yaml('builds')
 yaml['builds'].each do |build|
   current_build = Build.where(
     title: build['title'],
+    klass: Klass.where(title: build['class']).first,
     url: build['url']
   ).first_or_create
 
@@ -72,10 +73,10 @@ yaml['builds'].each do |build|
     ).first_or_create
   end
 
-  # passive_skills = build['passive_skills'].map do |skill|
-  #   PassiveSkill.where(title: skill).first
-  # end
-
-  # current_build.skill_slots = active_skills
-  # current_build.passive_skills = passive_skills
+  build['passive_skills'].each_with_index do |skill, i|
+    current_build.passive_slots.where(
+      position: i,
+      passive_skill: PassiveSkill.where(title: skill).first,
+    ).first_or_create
+  end
 end

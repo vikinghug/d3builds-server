@@ -11,7 +11,7 @@
   <tbody>
     <% @builds.each do |build| %>
       <tr>
-        <td><%= build.title %></td>
+        <td><strong><%= build.title %></strong></td>
         <td><%= link_to 'Show', build %></td>
         <td><%= link_to 'Edit', edit_build_path(build) %></td>
         <td><%= link_to 'Destroy', build, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -19,3 +19,5 @@
     <% end %>
   </tbody>
 </table>
+
+<%= link_to 'New Build', new_build_path %>
