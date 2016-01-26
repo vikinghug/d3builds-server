@@ -7,13 +7,7 @@ class Build < ActiveRecord::Base
 
   has_many :passive_skills
 
-  validate :limit_number_of_skill_slots
-
-  def limit_number_of_skill_slots
-    if skill_slots.length > SKILL_SLOT_LIMIT
-      errors.add(:skill_slots, "can't have more than #{SKILL_SLOT_LIMIT}")
-    end
-  end
+  validates :title, presence: true
 
   def to_param
     "#{id}-#{title}".parameterize
